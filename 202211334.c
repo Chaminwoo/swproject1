@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <windows.h>
+#include <Windows.h>
 #include <process.h>
 
 int isForward = 0;
@@ -8,7 +8,7 @@ int isRight = 0;
 int isDust = 0;
 int tick = 10;
 
-unsigned _stdcall DetectControl(void* arg){
+unsigned _stdcall DetectControl(/*void* arg*/) {
 	while(1){
 		DetectObstacle();
 		DetectDust();
@@ -82,18 +82,29 @@ void RightMotorControl(int R) {
 
 int FrontSensor() {
 	//전방 센서가 장애물을 감지하면 1, or 0을 return
+
+
+	return 0;
 }
 
 int LeftSensor() {
 	//좌측 센서가 장애물을 감지하면 1, or 0을 return
+
+
+	return 0;
 }
 
 int RightSensor() {
 	//우측 센서가 장애물을 감지하면 1, or 0을 return
+
+	return 0;
 }
 
 int DustSensor() {
 	//먼지 센서가 먼지를 감지하면 1 or 0을 return
+
+
+	return 0;
 }
 
 int main() {
