@@ -108,7 +108,7 @@ int DustSensor() {
 }
 
 int main() {
-	_beginthreadex(NULL, 0, DetectControl, 0, 0, NULL);
+	_beginthreadex(NULL, 0, DetectControl(), 0, 0, NULL);
 	while(1) {
 		if(isDust) {
 			SetCleaner(1);
